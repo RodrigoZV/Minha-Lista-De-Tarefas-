@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <title>Minha Lista De Tarefas</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0; 
+            
+
+        }
+        li {
+
+            color: white;
+        }
+        body {
+            border: 1px solid black;
+            font-family: Arial;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: black;
+        }
+        
+        header{
+            color: white;
+            text-align: center;
+        }
+
+        main{
+            flex: auto;
+            background: gray;
+            border-radius: 10px;
+
+        }
+
+        main ul{
+            padding: 0;
+            list-style: none;
+
+        }
+
+        main li{
+            padding: 5px 0;
+
+        }
+
+        footer{
+            display: flex;
+            padding-left: 5pix;
+
+        }
+
+        footer input{
+            flex: auto;
+            padding: 5px; 
+        }
+
+    </style>
 </head>
+
 <body>
+    <header>
         <h1>Tarefas</h1>
-        <div>    
-            <ul></ul>
-            <input>
-            <button onclick="add()">adicionar</button>
-        </div>
-    <script> 
+    </header>
+    <main> 
+        <ul></ul>
+    </main>
+    <footer> 
+        <input>
+        <button onclick="add()">adicionar</button>
+        </footer>
+<script> 
+        
 
 const tarefas = ["Estudar HTML", "Estudar CSS", "Estudar JS"]
 
